@@ -1,0 +1,11 @@
+[
+  "Ladder: 17385, 10, 2, false\nTile: 2677, 9805, 0, region[10649, 41, 153], chunk[334, 1225], hash [43869773]",
+  "Ladder: 17384, 10, 0, false\nTile: 2677, 3405, 0, region[10549, 41, 53], chunk[334, 425], hash [43863373]",
+  "Ladder: 17387, 10, 3, false\nTile: 3578, 9927, 0, region[14235, 55, 155], chunk[447, 1240], hash [58631879]",
+  "Ladder: 12389, 10, 1, false\nTile: 2960, 3507, 0, region[11830, 46, 54], chunk[370, 438], hash [48500147]",
+  "Ladder: 16679, 10, 1, false\nTile: 3057, 3483, 1, region[12086, 47, 54], chunk[382, 435], hash [318524827]",
+  "Ladder: 2641, 10, 1, false\nTile: 3057, 3483, 0, region[12086, 47, 54], chunk[382, 435], hash [50089371]",
+  "Ladder: 15116, 10, 3, false\nTile: 2509, 3846, 0, region[10044, 39, 60], chunk[313, 480], hash [41111302]",
+  "Ladder: 16110, 10, 3, false\nTile: 3668, 9888, 3, region[14746, 57, 154], chunk[458, 1236], hash [865412768]",
+  "Manhole: 10321, 10, 3, false\nTile: 3267, 3400, 0, region[13109, 51, 53], chunk[408, 425], hash [53529928]"
+]

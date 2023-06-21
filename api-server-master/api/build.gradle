@@ -1,0 +1,54 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.1.RELEASE'
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.61'
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'application'
+
+mainClassName = "com.zenyte.MainKt"
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    runtimeOnly('mysql:mysql-connector-java')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile 'org.springframework.boot:spring-boot-starter-security'
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '3.4.1'
+
+    compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.2.2'
+
+    compile 'com.google.guava:guava:28.1-jre'
+
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.10.1"
+
+    compile 'com.warrenstrange:googleauth:1.4.0'
+
+    compile 'com.amazonaws:aws-java-sdk-ses:1.11.683'
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
